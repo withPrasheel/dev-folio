@@ -1,17 +1,18 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    #050A30,
+    #050A30
   );
+  /* rgb(6, 0, 43), rgb(8, 0, 33) */
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    #050A30,
+    #050A30
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #8c70f0;
 }
 
 .purple {
@@ -32,7 +33,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: rgb(6, 0, 43);
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -57,18 +58,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #050A30;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: #8c70f0cf;
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: #8c70f0cf;
   border-radius: 12px;
 }
 
@@ -76,7 +77,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #19173da9 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -97,7 +98,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #8c70f0 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -194,7 +195,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #8c70f0cf;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -281,17 +282,17 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: #8c70f0;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: #8c70f0 !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: #8c70f0cf !important;
 }
 
 @media (max-width: 767px) {
@@ -518,8 +519,8 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color: #8c70f0 !important;
+  border-color: #8c70f0 !important;
 }
 
 .btn-primary:hover {
@@ -727,7 +728,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: rgb(6, 0, 43) !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -735,8 +736,8 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #8c70f0 !important;
+  border-color: #8c70f0 !important;
 }
 .fork-btn-inner::after {
   display: none !important;
