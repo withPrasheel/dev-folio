@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
+import bounce from "../../Assets/Projects/bounce-game.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
@@ -23,9 +23,9 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Bounce}
+              imgPath={bounce}
               isBlog={false}
-              title="Bounce"
+              title="Bounce Game"
               description=""
               ghLink="https://github.com/withPrasheel/bounce-game"
               demoLink="https://zetox1x.itch.io/bounce-game"
