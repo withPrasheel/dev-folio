@@ -26,9 +26,9 @@ function Projects() {
               imgPath={Bounce}
               isBlog={false}
               title="Bounce"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              description=""
+              ghLink="https://github.com/withPrasheel/bounce-game"
+              demoLink="https://zetox1x.itch.io/bounce-game"
             />
           </Col>
 
