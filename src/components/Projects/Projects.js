@@ -27,7 +27,7 @@ function Projects() {
               isBlog={false}
               title="Bounce Game"
               description=""
-              ghLink="https://github.com/withPrasheel/bounce-game"
+              ghLink="https://github.com/withPrasheel/2D-test-project"
               demoLink="https://zetox1x.itch.io/bounce-game"
             />
           </Col>
