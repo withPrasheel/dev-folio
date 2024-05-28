@@ -32,7 +32,7 @@ function Projects() {
             />
           </Col>
 
-          {/* <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
@@ -42,7 +42,7 @@ function Projects() {
               demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
-
+          {/* 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={editor}
