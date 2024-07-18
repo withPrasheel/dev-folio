@@ -742,3 +742,65 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+/* added */
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+}
+
+.timeline-line {
+  position: absolute;
+  width: 4px;
+  background-color: #007bff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-card {
+  position: relative;
+}
+
+.education-card::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: -15px;
+  border-style: solid;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #007bff transparent transparent;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: -15px;
+  border-style: solid;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #007bff;
+}
