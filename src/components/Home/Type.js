@@ -9,7 +9,7 @@ function Type() {
           "Grad Student at ASU",
           "Software Developer",
           "I am into Web Development",
-          "I am into Cound Development",
+          "I am into Cloud Development",
           "Open Source Contributor",
         ],
         autoStart: true,
