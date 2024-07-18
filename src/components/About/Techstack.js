@@ -8,39 +8,18 @@ import {
   DiNodejs,
   DiMongodb,
   DiPython,
-  DiGit,
   DiJava,
   DiAngularSimple
 } from "react-icons/di";
 import {
   SiExpress,
   SiJunit5,
-  SiAngular,
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
   SiPostgresql,
-  SiVisualstudiocode,
   SiSpringboot,
-  SiPostman,
-  SiDocker,
-  SiGit,
-  SiGithub,
-  SiJenkins,
-  SiJira,
-  SiAmazonaws,
-  SiUnity,
-  SiMicrosoftazure,
-  SiGitlab,
-  SiEclipseide,
-  SiApachenetbeanside,
-  SiPycharm,
   SiMysql,
   SiCucumber,
   SiSelenium
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (
