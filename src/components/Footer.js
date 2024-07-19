@@ -14,7 +14,7 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Made with <span style={{ color: 'red' }}>{'\u2764'}</span> by Prasheel</h3>
+          {/* <h3>Made with <span style={{ color: 'red' }}>{'\u2764'}</span> by Prasheel</h3> */}
         </Col>
         {/* <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} SB</h3>
