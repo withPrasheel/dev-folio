@@ -1,0 +1,19 @@
+.techstack-title {
+    border: 1px solid #007bff; /* Primary color outline */
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: #007bff; /* Primary color text */
+  }
+  
+  .techstack-item {
+    border: 1px solid #28a745; /* Success color outline */
+    padding: 2px 5px;
+    margin-right: 5px;
+    border-radius: 4px;
+    color: #28a745; /* Success color text */
+  }
+  
+  .project-card-view .btn-primary {
+    border: 1px solid #007bff; /* Primary color outline */
+  }
+  

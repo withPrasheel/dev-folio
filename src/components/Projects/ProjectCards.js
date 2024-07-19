@@ -5,6 +5,11 @@ import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
 function ProjectCards(props) {
+  const techStackItems = props.TechStack.split(',').map((item, index) => (
+    <Button variant="info" key={index} style={{marginLeft: "4px", marginRight: "4px", marginBottom: "4px"}} >
+      {item.trim()}
+    </Button>
+  ));
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -12,6 +17,9 @@ function ProjectCards(props) {
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
+        </Card.Text>
+        <Card.Text style={{ textAlign: "justify", display: "flex", alignItems: "center", flexWrap: "wrap", justifyContent: "space-around"}}>
+            {techStackItems}
         </Card.Text>
         <Button variant="primary" href={props.ghLink} target="_blank">
           <BsGithub /> &nbsp;
