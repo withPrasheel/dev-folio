@@ -19,10 +19,10 @@ function Education() {
 										<h3 id="experience-step-1-heading" class="ra-heading">Master of Science at Arizona State University</h3>
 										<span class="uia-card__time">
 											<span class="ha-screen-reader">from</span>
-											<time datetime="2012-02">August 2023</time>
+											<time dateTime="2012-02">August 2023</time>
 											<span class="uia-card__time-divider" aria-hidden="true"></span>
 											<span class="ha-screen-reader">to</span>
-											<time datetime="2013-07">May 2025</time>
+											<time dateTime="2013-07">May 2025</time>
 										</span>
 									</div>
 									<div class="uia-card__body">
@@ -40,10 +40,10 @@ function Education() {
 										<h3 id="experience-step-2-heading" class="ra-heading">B.E. from PES University</h3>
 										<span class="uia-card__time">
 											<span class="ha-screen-reader">from</span>
-											<time datetime="2016-07">July 2016</time>
+											<time dateTime="2016-07">July 2016</time>
 											<span class="uia-card__time-divider" aria-hidden="true"></span>
 											<span class="ha-screen-reader">to</span>
-											<time datetime="2020-08">August 2020</time>
+											<time dateTime="2020-08">August 2020</time>
 										</span>
 									</div>
 									<div class="uia-card__body">

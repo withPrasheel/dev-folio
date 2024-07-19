@@ -19,10 +19,10 @@ function WorkEx() {
 										<h3 id="experience-step-1-heading" class="ra-heading">Full Stack Software Developer at Netmeds</h3>
 										<span class="uia-card__time">
 											<span class="ha-screen-reader">from</span>
-											<time datetime="2012-02">October 2020</time>
+											<time dateTime="2012-02">October 2020</time>
 											<span class="uia-card__time-divider" aria-hidden="true"></span>
 											<span class="ha-screen-reader">to</span>
-											<time datetime="2013-07">November 2021</time>
+											<time dateTime="2013-07">November 2021</time>
 										</span>
 									</div>
 									<div class="uia-card__body">
@@ -50,10 +50,10 @@ function WorkEx() {
 										<h3 id="experience-step-2-heading" class="ra-heading">Software Engineer at Synechron</h3>
 										<span class="uia-card__time">
 											<span class="ha-screen-reader">from</span>
-											<time datetime="2013-09">September 2013</time>
+											<time dateTime="2013-09">September 2013</time>
 											<span class="uia-card__time-divider" aria-hidden="true"></span>
 											<span class="ha-screen-reader">to</span>
-											<time datetime="2014-02">February 2014</time>
+											<time dateTime="2014-02">February 2014</time>
 										</span>
 									</div>
 									<div class="uia-card__body">
