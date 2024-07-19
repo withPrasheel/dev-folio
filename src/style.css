@@ -441,6 +441,7 @@ button:focus {
 
 .blockquote-footer {
   color: #a588c0 !important;
+  margin-top: 0rem;
 }
 /* --------- */
 /* Projects */
@@ -834,4 +835,9 @@ button:focus {
 
 .tech-icons:hover .tech-name {
   opacity: 1;
+}
+
+.leetcode-block{
+  width: 80%;
+  height: 200px !important;
 }

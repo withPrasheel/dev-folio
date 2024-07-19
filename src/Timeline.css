@@ -538,7 +538,7 @@ UIA-TIMELINE
     --_uia-control-border-radius: var(--uia-control-border-radius, 0.25rem);
   }
   
-
+ 
   .uia-card-list-item{
     text-align: left;
   }

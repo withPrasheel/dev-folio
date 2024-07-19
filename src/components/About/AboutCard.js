@@ -18,19 +18,7 @@ function AboutCard() {
             {/* I have completed my Bachelors in Engineering from PES University. */}
             <br />
             <br />
-            
           </p>
-          {/* <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul> */}
 
           <p style={{ color: "rgb(155 126 172)" }}>
             'No' doesnt mean 'never', it just means 'not yet'{" "}

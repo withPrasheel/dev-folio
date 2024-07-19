@@ -8,6 +8,7 @@ import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import WorkEx from "./WorkEx";
 import Education from "./Education";
+import LeetCode from "./Leetcode";
 
 function About() {
   return (
@@ -52,9 +53,8 @@ function About() {
           <strong className="purple">Tools</strong> I use
         </h1>
         <Toolstack />
-    
-
         <Github />
+        <LeetCode />
       </Container>
     </Container>
   );
