@@ -26,7 +26,8 @@ function Education() {
 										</span>
 									</div>
 									<div class="uia-card__body">
-										<div class="uia-card__description">							
+										<div style={{textAlign: "start"}} class="uia-card__description">
+											Major in Software Engineering							
 										</div>
 									</div>
 								</div>
@@ -47,7 +48,8 @@ function Education() {
 										</span>
 									</div>
 									<div class="uia-card__body">
-										<div class="uia-card__description">
+									<div style={{textAlign: "start"}} class="uia-card__description">
+											Major in Electronics and Communication Engineering							
 										</div>
 									</div>
 								</div>
