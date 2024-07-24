@@ -10,7 +10,6 @@ function Type() {
           "Software Developer",
           "I am into Web Development",
           "I am into Cloud Development",
-          "Open Source Contributor",
         ],
         autoStart: true,
         loop: true,

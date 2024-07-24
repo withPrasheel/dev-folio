@@ -29,25 +29,28 @@ function Home2() {
               <br />
               My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
+                <b className="purple">Software Technologies and Products </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              Whenever possible, I apply my passion for developing products across the 
               <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
+                <b className="purple"> Full stack.</b>
+              </i> 
+              <br />
+                On the <b className="purple">backend</b>, I work with technologies like 
+              <i>
+                <b className="purple"> Spring, Spring Boot, Node.js, and Express.js. </b>
               </i>
-              &nbsp; like
+              <br />
+              On the <b className="purple">frontend</b>, I utilize modern JavaScript libraries and frameworks like 
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> Angular and React. </b>
+              </i> 
+              <br />
+              Additionally, I have experience working with <b className="purple">databases</b> such as 
+              <i>
+                <b className="purple"> MySQL and MongoDB.</b>
               </i>
             </p>
           </Col>
