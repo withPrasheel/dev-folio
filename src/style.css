@@ -462,6 +462,14 @@ button:focus {
   height: auto !important;
 }
 
+@media (max-width: 450px) {
+  .project-card {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+
 .project-card-view {
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
@@ -856,9 +864,13 @@ button:focus {
   height: 200px !important;
 }
 
-.card-body{
-  padding-left: 0;
-  padding-right: 0;
+
+
+@media (max-width: 450px) {
+  .card-body{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 }
 
 @media (max-width: 1200px) {
