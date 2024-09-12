@@ -551,6 +551,8 @@ button:focus {
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .tech-icons {
@@ -598,7 +600,18 @@ button:focus {
 
 @media (max-width: 767px) {
   .about-img {
-    padding-top: 0 !important;
+    padding-top: 0% !important;
+  }
+}
+@media (max-width: 450px) {
+  .about-img {
+    padding-top: 20% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-img {
+    padding-top: 40% !important;
   }
 }
 /* --------- */
@@ -843,3 +856,13 @@ button:focus {
   height: 200px !important;
 }
 
+.card-body{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 1200px) {
+  .leetcode-container {
+    display: none; /* Hide LeetCode section on screens smaller than 1200px */
+  }
+}

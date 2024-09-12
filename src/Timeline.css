@@ -629,7 +629,7 @@ UIA-TIMELINE
   .page {
     box-sizing: border-box;
     inline-size: min(100%, 90ch);
-    padding: 5rem 2rem 3rem;
+    padding: 5rem 0 3rem;
     margin-inline: auto;
   }
   
@@ -648,5 +648,12 @@ UIA-TIMELINE
   
   .linktr__goal {
     box-shadow: rgb(8 49 112 / 24%) 0 2px 8px 0;
+  }
+  
+  @media (max-width: 600px) {
+    [data-uia-card-skin="1"] .uia-card__container {
+        /* Reduce left and right padding by half */
+        padding: var(--uia-card-padding-block, 1rem) calc(var(--uia-card-padding-inline, 1.75rem) / 2);
+    }
   }
   

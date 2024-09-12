@@ -55,7 +55,10 @@ function About() {
         </h1>
         <Toolstack />
         <Github />
-        <LeetCode />
+        <div className="leetcode-container">
+          <LeetCode />
+        </div>
+       
       </Container>
     </Container>
   );
