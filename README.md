@@ -1,6 +1,6 @@
 <h2 align="center">
   Prasheel | Portfolio <br/>
-  <a href="https://prasheel.vercel.app/" target="_blank">prasheel.com</a>
+  <a href="https://prasheel.com/" target="_blank">prasheel.com</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readme-img1.png" />
