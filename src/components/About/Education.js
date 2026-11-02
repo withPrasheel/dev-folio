@@ -1,6 +1,4 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../Timeline.css'; // Make sure to create a Timeline.css file
 

@@ -8,8 +8,6 @@ import { FaLinkedinIn } from "react-icons/fa";
 import {BsMedium} from 'react-icons/bs'
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
   return (
     <Container fluid className="footer">
       <Row>
