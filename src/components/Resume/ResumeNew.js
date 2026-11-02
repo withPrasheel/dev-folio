@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/Prasheel_Nandwana_Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
@@ -13,13 +12,18 @@ function ResumeNew() {
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    const updateWidth = () => setWidth(window.innerWidth);
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
   }, []);
+
+  // 612pt is the PDF page width; cap the scale so the page never overflows the viewport
+  const pdfScale = Math.min(width > 786 ? 1.7 : 0.6, (width - 24) / 612);
 
   return (
     <div>
-      <Container fluid className="resume-section">
-        <Particle />
+      <Container fluid className="resume-section" id="resume">
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
@@ -34,7 +38,7 @@ function ResumeNew() {
 
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} renderTextLayer={true} scale={width > 786 ? 1.7 : 0.6} />
+            <Page pageNumber={1} renderTextLayer={true} scale={pdfScale} />
           </Document>
         </Row>
 

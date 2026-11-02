@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/pn-logo.png";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+import { CgGitFork, CgFileDocument } from "react-icons/cg";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -14,21 +12,50 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
-import { CgFileDocument } from "react-icons/cg";
+const SECTIONS = [
+  { id: "home", label: "Home", Icon: AiOutlineHome },
+  { id: "about", label: "About", Icon: AiOutlineUser },
+  { id: "projects", label: "Projects", Icon: AiOutlineFundProjectionScreen },
+  { id: "resume", label: "Resume", Icon: CgFileDocument },
+];
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [activeSection, updateActiveSection] = useState(SECTIONS[0].id);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
+  useEffect(() => {
+    function scrollHandler() {
+      updateNavbar(window.scrollY >= 20);
+
+      const doc = document.documentElement;
+      const atBottom =
+        doc.scrollHeight > window.innerHeight + 1 &&
+        window.innerHeight + window.scrollY >= doc.scrollHeight - 2;
+      if (atBottom) {
+        updateActiveSection(SECTIONS[SECTIONS.length - 1].id);
+        return;
+      }
+
+      const marker = window.innerHeight / 3;
+      let current = SECTIONS[0].id;
+      SECTIONS.forEach(({ id }) => {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= marker) {
+          current = id;
+        }
+      });
+      updateActiveSection(current);
     }
-  }
 
-  window.addEventListener("scroll", scrollHandler);
+    scrollHandler();
+    window.addEventListener("scroll", scrollHandler, { passive: true });
+    window.addEventListener("resize", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+      window.removeEventListener("resize", scrollHandler);
+    };
+  }, []);
 
   return (
     <Navbar
@@ -38,7 +65,11 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand
+          href="#home"
+          className="d-flex"
+          onClick={() => updateExpanded(false)}
+        >
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -52,55 +83,18 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-
-            {/* <Nav.Item>
-              <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item> */}
+          <Nav className="ms-auto">
+            {SECTIONS.map(({ id, label, Icon }) => (
+              <Nav.Item key={id}>
+                <Nav.Link
+                  href={`#${id}`}
+                  active={activeSection === id}
+                  onClick={() => updateExpanded(false)}
+                >
+                  <Icon style={{ marginBottom: "2px" }} /> {label}
+                </Nav.Link>
+              </Nav.Item>
+            ))}
 
             <Nav.Item className="fork-btn">
               <Button
